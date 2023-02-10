@@ -69,18 +69,26 @@ font-weight: 900;
 
 #image1 {
 	background-image: url("./kakaoTalk_20230211_011443449.jpg");
+  background-position: center;
+                background-repeat: no-repeat;
 }
 
 #image2 {
 	background-image: url("./KakaoTalk_20230211_011442896.jpg");
+  background-position: center;
+                background-repeat: no-repeat;
 }
 
 #image3 {
 	background-image: url("./KakaoTalk_20230211_011442898.jpg");
+  background-position: center;
+                background-repeat: no-repeat;
 }
 
 #image4 {
-	background-image: url("./kakaoTalk_20230211_011443449.jpg");
+	background-image: url("./kakaoTalk_20230211_041146187.jpg");
+  background-position: center;
+                background-repeat: no-repeat;
 }
 
 .photo-description {
@@ -104,10 +112,6 @@ font-weight: 900;
     opacity: 0;
 }
 
-.video{
-    width: 100%;
-    height: 100%;
-}
 
 .showText{
     opacity: 0;
@@ -154,7 +158,7 @@ function hideText(number) {
 // 클릭 기능
 // 1. 선택된 사진의 숫자를 가진 텍스트를 alert 형태로 출력해줌
 function alertText(number) {
-	alert(`${number}번째 추억이에요! 눌러주셔서 감사합니다 :)`);
+	alert(`${number}번째 추억이야! :)`);
 }
           </script>
 </head>
@@ -171,43 +175,35 @@ function alertText(number) {
                     </span>
                 </div>
 	      
-	      <div id="image2" class="photo-frame"
-                    onmouseover="hideText(2)"
-                    onmouseout="showText(2)"
-                    onclick="alertText(2)">
-					<span id="desc2" class="photo-description">
-						생일축하 풍선ㅎㅎ
-					</span>
-				</div>
-
-	      <div id="image3" class="photo-frame"
-                    onmouseover="hideText(3)"
-                    onmouseout="showText(3)"
-                    onclick="alertText(3)">
-					<span id="desc3" class="photo-description">
-						미소가 예뻐요 ^__^
-					</span>
-				</div>
-
-                <div id="image4" class="photo-frame"
-                onmouseover="hideText(4)"
-                onmouseout="showText(4)"
-                onclick="alertText(4)">
-                <iframe
-                    src="https://www.youtube.com/embed/TWz1btekxfs" title="YouTube video player" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    class="video"> 
-                </iframe>
+            <div id="image2" class="photo-frame"
+                        onmouseover="hideText(2)"
+                        onmouseout="showText(2)"
+                        onclick="alertText(2)">
+              <span id="desc2" class="photo-description">
+                생일축하 케익ㅎㅎ
+              </span>
             </div>
 
+            <div id="image3" class="photo-frame"
+                        onmouseover="hideText(3)"
+                        onmouseout="showText(3)"
+                        onclick="alertText(3)">
+              <span id="desc3" class="photo-description">
+                미소가 예뻐요 ^__^
+              </span>
+            </div>
 
+            <div id="image4" class="photo-frame"
+                      onmouseover="hideText(4)"
+                      onmouseout="showText(4)"
+                      onclick="alertText(4)">
+              <span id="desc3" class="photo-description">
+                미소가 예뻐요 ^__^
+              </span>
+            </div>
+            
+          </div>
 
-
-
-
-
-
-        </div>
         <div class="footer">
             <p class="f-title">Happy Birthday</p>
             <p class="f-date">2023.02.09</p>
